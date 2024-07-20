@@ -1,25 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import Textform from './components/Textform';
+import Navbar from './components/Navbar';
+import * as React from "react";
+import { createRoot } from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+} from "react-router-dom";
 
+let name = "Abhishek";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <Navbar/>
+    <div className="container my-3">
+    <Textform abc="enter your text here eh"/>
     </div>
+   
+  
+    </>
+
   );
 }
+// console.log(object)
 
 export default App;
