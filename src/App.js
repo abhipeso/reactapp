@@ -4,12 +4,12 @@ import Textform from './components/Textform';
 import Navbar from './components/Navbar';
 import * as React from "react";
 import { createRoot } from "react-dom/client";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
-  Link,
-} from "react-router-dom";
+// import {
+//   createBrowserRouter,
+//   RouterProvider,
+//   Route,
+//   Link,
+// } from "react-router-dom";
 
 let name = "Abhishek";
 function App() {
